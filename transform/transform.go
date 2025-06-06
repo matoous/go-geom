@@ -1,6 +1,8 @@
 package transform
 
-import "github.com/twpayne/go-geom"
+import (
+	"github.com/twpayne/go-geom"
+)
 
 // UniqueCoords creates a new coordinate array (with the same layout as the inputs) that
 // contains each unique coordinate in the coordData.  The ordering of the coords are the

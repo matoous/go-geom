@@ -105,6 +105,12 @@ func (g *geom0) verify() error {
 	return nil
 }
 
+func (g *geom0) Convert(f func(x, y float64) (float64, float64)) {
+	TransformInPlace(g, func(c Coord) {
+		c[0], c[1] = f(c[0], c[1])
+	})
+}
+
 // Coord returns the ith coord of g.
 func (g *geom1) Coord(i int) Coord {
 	return g.flatCoords[i*g.stride : (i+1)*g.stride]

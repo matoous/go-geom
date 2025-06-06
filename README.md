@@ -46,11 +46,6 @@ Package `geom` implements efficient geometry types for geospatial applications.
 * [WKB Hex](https://pkg.go.dev/github.com/twpayne/go-geom/encoding/wkbhex)
 * [EWKB Hex](https://pkg.go.dev/github.com/twpayne/go-geom/encoding/ewkbhex)
 
-### Geometry functions
-
-* [XY](https://pkg.go.dev/github.com/twpayne/go-geom/xy) 2D geometry functions
-* [XYZ](https://pkg.go.dev/github.com/twpayne/go-geom/xyz) 3D geometry functions
-
 ## Protection against malicious or malformed inputs
 
 The WKB and EWKB formats encode geometry sizes, and memory is allocated for
@@ -73,3 +68,7 @@ protection is disabled, but can be enabled by setting positive values for
 ## License
 
 BSD-2-Clause
+
+## Inspiration
+
+- https://github.com/pchchv/geo
